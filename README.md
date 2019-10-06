@@ -1,14 +1,25 @@
 # ProjectTT
+
 Environment : VisualStudio 2017 or 2019
+
 Framework: .NetFrameWork
- Program Language: C#
+
+Program Language: C#
+
 AutomationTool: Selenium 3.14
+
 AutomationFramework: NUnit with POM Approach
+
 Browser: Chrome
+
 Run test: Clone Repository from GitHub to Local Machine
+
 Open solution by using VisualStudio 2017 
+
 Change paths for Excel, Repors, Xml config in resource file according to your system.
+
 choose Test-> windows-> TestExplorer->
+
 Run the test 
 
 -------------Test workflow----------
