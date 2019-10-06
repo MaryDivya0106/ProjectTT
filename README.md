@@ -22,7 +22,7 @@ Run the test
 8.Stored in IList
 9.Validation----->compared grabbed Text with Excel coloum Name "PaintID"
 10.Run the Test
-11. Generated the reports and logs.
+11. Generated the reports and logs..
 
 ----------------Framework----------------------
 Nunit with POM
