@@ -50,3 +50,4 @@ C:\TechnicalTest\TechnicalTest\obj\Debug\TechnicalTest.csproj.CoreCompileInputs.
 C:\TechnicalTest\TechnicalTest\obj\Debug\TechnicalTest.csproj.CopyComplete
 C:\TechnicalTest\TechnicalTest\obj\Debug\TechnicalTest.dll
 C:\TechnicalTest\TechnicalTest\obj\Debug\TechnicalTest.pdb
+C:\TechnicalTest\TechnicalTest\obj\Debug\TechnicalTest.csprojAssemblyReference.cache
