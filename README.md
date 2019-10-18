@@ -1,9 +1,9 @@
 # ProjectTT
-# ProjectTT
+
 Environment : VisualStudio 2017 or 2019
 
 Framework: .NetFrameWork
- 
+
 Program Language: C#
 
 AutomationTool: Selenium 3.14
@@ -11,12 +11,15 @@ AutomationTool: Selenium 3.14
 AutomationFramework: NUnit with POM Approach
 
 Browser: Chrome
+
 Run test: Clone Repository from GitHub to Local Machine
 
 Open solution by using VisualStudio 2017 
 
 Change paths for Excel, Repors, Xml config in resource file according to your system.
+
 choose Test-> windows-> TestExplorer->
+
 Run the test 
 
 -------------Test workflow----------
@@ -30,7 +33,7 @@ Run the test
 8.Stored in IList
 9.Validation----->compared grabbed Text with Excel coloum Name "PaintID"
 10.Run the Test
-11. Generated the reports and logs.
+11. Generated the reports and logs..
 
 ----------------Framework----------------------
 Nunit with POM
