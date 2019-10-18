@@ -121,13 +121,13 @@
     <value>Chrome</value>
   </data>
   <data name="ConfigPath" xml:space="preserve">
-    <value>C:\TechnicalTest\TechnicalTest\Utils\XMLConfig.xml</value>
+    <value>XMLConfig.xml</value>
   </data>
   <data name="ExcelPath" xml:space="preserve">
-    <value>C:\TechnicalTest\TechnicalTest\PaintList.xlsx</value>
+    <value>PaintList.xlsx</value>
   </data>
   <data name="HtmlPath" xml:space="preserve">
-    <value>C:\TechnicalTest\TechnicalTest\TechnicalTest.html</value>
+    <value>TechnicalTest.html</value>
   </data>
   <data name="SearchProductUrl" xml:space="preserve">
     <value>https://www.bunnings.com.au</value>

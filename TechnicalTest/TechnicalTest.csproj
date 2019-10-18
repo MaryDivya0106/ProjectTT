@@ -75,7 +75,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
-    <Compile Include="Test\SearchProductPage.cs" />
+    <Compile Include="Test\ProductSearchTest.cs" />
     <Compile Include="Utils\CommonUtilities.cs" />
   </ItemGroup>
   <ItemGroup>

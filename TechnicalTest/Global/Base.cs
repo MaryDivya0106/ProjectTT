@@ -10,8 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using  TechnicalTest.Resources;
 using TechnicalTest.Utils;
-
-
+using System.IO;
+using System.Reflection;
 
 namespace TechnicalTest.Global
 {
@@ -19,6 +19,7 @@ namespace TechnicalTest.Global
     {
         public static IWebDriver driver { get; set; }
         public static string Browser = Resource1.Browser;
+
 
         #region reports
         public static ExtentTest test;
@@ -44,18 +45,24 @@ namespace TechnicalTest.Global
             driver.Manage().Window.Maximize();
 
             #region Initialise Reports
-            extent = new ExtentReports(Resource1.HtmlPath, true, DisplayOrder.NewestFirst);
-            extent.LoadConfig(Resource1.ConfigPath);
+
+            string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string Reportspath = Path.Combine(directory, Resource1.HtmlPath);
+            string Reportsconfig = Path.Combine(directory, Resource1.ConfigPath);
+            Console.WriteLine(Reportspath);
+
+            extent = new ExtentReports(Reportspath, true, DisplayOrder.NewestFirst);
+            extent.LoadConfig(Reportsconfig);
             #endregion
         }
 
         [TearDown]
         public void CloseBrowser()
         {
-            //ending test
+           // ending test
             extent.EndTest(test);
             extent.Flush();
-           // Global.Base.driver.Close();
+            Global.Base.driver.Close();
         }
     }
 }

@@ -70,7 +70,7 @@ namespace TechnicalTest.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\TechnicalTest\TechnicalTest\Utils\XMLConfig.xml.
+        ///   Looks up a localized string similar to XMLConfig.xml.
         /// </summary>
         internal static string ConfigPath {
             get {
@@ -79,7 +79,7 @@ namespace TechnicalTest.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\TechnicalTest\TechnicalTest\PaintList.xlsx.
+        ///   Looks up a localized string similar to PaintList.xlsx.
         /// </summary>
         internal static string ExcelPath {
             get {
@@ -88,7 +88,7 @@ namespace TechnicalTest.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\TechnicalTest\TechnicalTest\TechnicalTest.html.
+        ///   Looks up a localized string similar to TechnicalTest.html.
         /// </summary>
         internal static string HtmlPath {
             get {

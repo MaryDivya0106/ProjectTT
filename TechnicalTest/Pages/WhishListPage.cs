@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using TechnicalTest.Resources;
 using TechnicalTest.Global;
 using TechnicalTest.Utils;
+using System.IO;
+using TechnicalTest.Pages;
+using System.Reflection;
 
 namespace TechnicalTest.Pages
 {
@@ -25,9 +28,13 @@ namespace TechnicalTest.Pages
 
         public void wishListPage()
         {
-            //Reading Excel
-            Global.ExcelConfiguration.PopulateInCollection(Resource1.ExcelPath, "SearchPaint");
 
+            //Reading Excel
+           
+            string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string Excelpath = Path.Combine(directory, Resource1.ExcelPath);
+            Console.WriteLine(Excelpath);
+             Global.ExcelConfiguration.PopulateInCollection(Excelpath, "SearchPaint");
             //Implict wait to load the page
             CommonUtilities.implicitWait(20);
             

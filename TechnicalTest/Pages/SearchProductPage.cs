@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 using TechnicalTest.Global;
 using TechnicalTest.Resources;
 using TechnicalTest.Utils;
+using TechnicalTest.Global;
+using System.IO;
+using System.Reflection;
 
 namespace TechnicalTest.Pages
 {
@@ -34,8 +37,10 @@ namespace TechnicalTest.Pages
 
         public void searchProductPage()
         {
-            //Reading Excel
-            Global.ExcelConfiguration.PopulateInCollection(Resource1.ExcelPath, "SearchPaint");
+            string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string Excelpath = Path.Combine(directory, Resource1.ExcelPath);
+            Console.WriteLine(Excelpath);
+            Global.ExcelConfiguration.PopulateInCollection(Excelpath, "SearchPaint");
            
             //Navigate to Url
             Global.Base.driver.Navigate().GoToUrl(Resource1.SearchProductUrl);
